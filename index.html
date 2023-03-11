@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarika Fitness Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trochut:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Trochut:wght@700&display=swap');
+      /* CSS Reset */
+      body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("img.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+        font-family: 'Trochut', cursive;
+      }
+      .left {
+        display: inline-block;
+        /* border: 2px solid rgb(45, 19, 19); */
+        position: absolute;
+        left: 12px;
+        top: 8px;
+      }
+      .mid {
+        display: block;
+        /* border: 2px solid green; */
+        width: 45%;
+        margin: 9px auto;
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+        top: 20px;
+        /* border: 2px solid pink; */
+      }
+      .navbar{
+         display: inline-block;
+      }
+      .navbar li{
+        display: inline-block;
+        font-size: 20px;
+      }
+      .navbar li a{
+        text-decoration: none;
+        color: white;
+        padding: 34px 23px;
+      }
+      .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+      }
+      img{
+        width: 85px;
+        padding-left: 25px;
+      }
+      h4{
+        line-height: 0px;
+        text-align: center;
+      }
+      .btn{
+        margin: 0px 8px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Trochut', cursive;
+      }
+      .btn:hover{
+        background-color: rgb(143, 133, 133);
+      }
+      .container{
+        border: 2px solid white;
+        margin: 105px 71px;
+        padding: 20px 60px;
+        border-radius: 25px;
+        width: 33%;
+      }
+      .form-group input{
+        text-align: center;
+        display: block;
+        width: 330px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 4px auto;
+        font-size: 18px;
+        border-radius: 8px;
+        font-family: 'Trochut', cursive;
+      }
+      .container h1{
+        text-align: center;
+      }
+      .container button{
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Left box for logo -->
+      <div class="left">
+        <img src="logo.png" alt="">
+        <h4>Sarika Fitness Gym</h5>
+      </div>
+      <!-- Mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- Right box for buttons -->
+      <div class="right">
+         <button class="btn">Call Us Now</button>
+         <button class="btn">Email Now</button>
+      </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Delhi Now</h1>
+        <form action="nonaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email id">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Phone NUmber">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+  </body>
+</html>
